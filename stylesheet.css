@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------
+    PC、スマホ共通CSS
+------------------------------------------------------------　*/
+/* 全ての要素（擬似要素も含む）の初期化*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, a, p{
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 5%;
+    width: 90%;
+}
+
+header {
+    background-color: rgb(200, 200, 200);
+    color: #dddddd;
+    height: 80px;
+}
+    .header-left {
+        display: inline-block;
+        position: relative;
+        width: 455px;
+    }
+        .header-logo {
+            display: inline-block;
+            height: 80px;
+            margin-left: 80px;
+        }
+        .rolling-icon {
+            float: left;
+            height: 70px;
+            margin: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 2s;
+            z-index: 10;
+        }
+            .rolling-icon:hover {
+                opacity: 0;
+                transform: rotate(2160deg);
+            }
+        .rolling-icon-hidden {
+            border-radius: 70px;
+            height: 70px;
+            margin: 5px;
+            position: absolute;
+            top 0;
+            left 0;
+            transition: all 2s;
+            z-index: 9;
+        }
+            .rolling-icon-hidden:hover {
+                opacity: 1;
+                transform: rotate(2160deg);
+            }
+
+    .header-menu {
+        display: inline-block;
+        float: right;
+    }
+        .header-menu li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+            .header-menu a {
+                display: block;
+                font-size: 14px;
+                font-weight: 900;
+                line-height: 80px;
+                transition: all 0.5s;
+            }
+
+            .header-menu a:hover {
+                color: rgb(37, 167, 54);
+                line-height: 70px;
+                text-shadow: 1px 5px 2px rgb(255, 255, 255);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
